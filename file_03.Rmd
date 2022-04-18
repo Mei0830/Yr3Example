@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+author: "Jo Saul"
+date: "15/04/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#simulate big data then put it into bins
+set.seed(123456)
+simdf1 <- rnorm_multi(n=5000,
+            mu=c(5,75, 20),
+            sd=c(2,25, 2),
+            r=c(0.2, 0.1, 0.4),
+            varnames = c('predictor', 'outcome', 'covariate')) %>%
+  mutate(predictor_binned=round(predictor,0)) %>%
+  mutate(predictor_binned=if_else(predictor_binned<0,0,
+          if_else(predictor_binned>10,10, predictor_binned))) %>% 
+  select(-predictor)
+
+```
+
+```{r}
+ggplot(simdf1, aes(x=predictor_binned, y=outcome)) +
+  geom_point() +
+  theme_minimal()
+```
+
+1. Add jitter and alpha to make this plot more readable
+2. Colour the points by covariate ranging from purple (low) and yellow (high)
+
+
