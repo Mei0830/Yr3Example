@@ -3,7 +3,6 @@ title: "githubfile01"
 author: "Jo Saul"
 date: "14/04/2022"
 output:
-  output:
   html_document:
     keep_md: true
 ---
