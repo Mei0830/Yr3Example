@@ -3,7 +3,9 @@ title: "githubfile01"
 author: "Jo Saul"
 date: "14/04/2022"
 output:
-  md_document: default
+  output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
