@@ -2,7 +2,8 @@
 title: "githubfile01"
 author: "Jo Saul"
 date: "14/04/2022"
-output: html_document
+output:
+  github_document: default
 ---
 
 ```{r setup, include=FALSE}
