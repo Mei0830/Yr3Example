@@ -2,7 +2,10 @@
 title: "githubfile01"
 author: "Jo Saul"
 date: "14/04/2022"
-output: html_document
+output:
+  output:
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
