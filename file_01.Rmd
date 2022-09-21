@@ -28,8 +28,10 @@ simdf <- rnorm_multi(n=100,
 ```{r}
 #graph the data
 ggplot(simdf, aes(x=predictor, y=outcome)) +
-  geom_point(fill='lawngreen') +
+  geom_point() +
   theme_minimal()
 ```
 
+Instruction:
 
+1. Change the colour of the points on this graph

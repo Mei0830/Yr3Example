@@ -31,6 +31,6 @@ ggplot(simdf1, aes(x=predictor_binned, y=outcome)) +
 ```
 
 1. Add jitter and alpha to make this plot more readable
-2. Colour the points by covariate ranging from purple (low) and yellow (high)
+
 
 

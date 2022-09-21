@@ -39,12 +39,7 @@ ggplot(simdf.long, aes(x=period, y=score, colour=group)) +
   theme_minimal()
 ```
 
+Instruction: 
+
 1. Make boxplots narrower 
 
-2. Max boxplots and centred so they are on top of each violin 
-
-3. Switch pre and post around so they are in chronological order - make sure you don't mess up the x label though!
-
-4. Add actual observations to the plot. NB you will need to dodge them to the same degree! Making them slightly transparent will improve this.
-
-5. Change legend, position and drawn line around it
